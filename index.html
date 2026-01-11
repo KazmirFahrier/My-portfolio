@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Kazmir Fahrier | ECE Professional</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
 
         body {
             font-family: 'Inter', sans-serif;
             background-color: #0f172a; /* Slate 900 */
             color: #f8fafc; /* Slate 50 */
+        }
+        
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
         }
 
         /* Custom Scrollbar */
@@ -71,13 +76,13 @@
     <div class="blob bottom-0 right-0" style="animation-duration: 25s; background: linear-gradient(180deg, rgba(236, 72, 153, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);"></div>
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 start-0 border-b border-slate-800 bg-slate-900/80 backdrop-blur-md">
+    <nav class="fixed w-full z-50 top-0 start-0 border-b border-slate-800 bg-slate-900/90 backdrop-blur-md">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <div class="w-8 h-8 bg-gradient-to-tr from-sky-400 to-indigo-500 rounded-lg flex items-center justify-center font-bold text-white">
-                    P
+                    KF
                 </div>
-                <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Portfolio</span>
+                <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Kazmir Fahrier</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false" id="menu-toggle">
                 <span class="sr-only">Open main menu</span>
@@ -85,18 +90,11 @@
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-slate-800 rounded-lg bg-slate-800/50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
-                    <li>
-                        <a href="#home" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-sky-400 md:p-0" aria-current="page">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 transition-colors">About</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 transition-colors">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 transition-colors">Contact</a>
-                    </li>
+                    <li><a href="#home" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-sky-400 md:p-0">Home</a></li>
+                    <li><a href="#about" class="block py-2 px-3 text-gray-300 rounded hover:text-white md:p-0 transition-colors">About</a></li>
+                    <li><a href="#experience" class="block py-2 px-3 text-gray-300 rounded hover:text-white md:p-0 transition-colors">Experience</a></li>
+                    <li><a href="#projects" class="block py-2 px-3 text-gray-300 rounded hover:text-white md:p-0 transition-colors">Projects</a></li>
+                    <li><a href="#contact" class="block py-2 px-3 text-gray-300 rounded hover:text-white md:p-0 transition-colors">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -106,34 +104,34 @@
     <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-4">
         <div class="max-w-4xl mx-auto text-center z-10 fade-in-up">
             <div class="inline-block p-2 px-4 rounded-full bg-slate-800/50 border border-slate-700 mb-6 text-sm text-sky-300 font-medium">
-                👋 Hello, I'm Available for Work
+                📍 Based in Queens, NY | Open to Relocation
             </div>
-            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-                Building digital <br />
-                <span class="gradient-text">experiences that matter.</span>
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+                Bridging Hardware & Software <br />
+                <span class="gradient-text">Engineering the Future.</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                I'm a creative developer passionate about building accessible, pixel-perfect user interfaces that blend art and code.
+                Electrical & Computer Engineering Professional specializing in FPGA/SoC design, Embedded Systems, and Academic Instruction.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#projects" class="px-8 py-3.5 rounded-lg bg-white text-slate-900 font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center gap-2">
-                    View My Work <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    View Projects <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
                 <a href="#contact" class="px-8 py-3.5 rounded-lg bg-slate-800 border border-slate-700 text-white font-semibold hover:bg-slate-700 transition-colors flex items-center justify-center gap-2">
                     Contact Me
                 </a>
             </div>
             
-            <!-- Tech Stack Marquee (Static representation for simplicity) -->
+            <!-- Tech Stack -->
             <div class="mt-16 pt-8 border-t border-slate-800/50">
-                <p class="text-sm text-slate-500 mb-4 uppercase tracking-wider font-semibold">Tech Stack</p>
+                <p class="text-sm text-slate-500 mb-4 uppercase tracking-wider font-semibold">Technical Expertise</p>
                 <div class="flex flex-wrap justify-center gap-6 text-slate-400">
-                    <div class="flex items-center gap-2"><i data-lucide="code-2" class="w-5 h-5"></i> React</div>
-                    <div class="flex items-center gap-2"><i data-lucide="layout" class="w-5 h-5"></i> Tailwind</div>
-                    <div class="flex items-center gap-2"><i data-lucide="file-json" class="w-5 h-5"></i> Node.js</div>
-                    <div class="flex items-center gap-2"><i data-lucide="database" class="w-5 h-5"></i> SQL</div>
-                    <div class="flex items-center gap-2"><i data-lucide="figma" class="w-5 h-5"></i> Figma</div>
-                    <div class="flex items-center gap-2"><i data-lucide="git-branch" class="w-5 h-5"></i> Git</div>
+                    <div class="flex items-center gap-2" title="FPGA/SoC"><i data-lucide="cpu" class="w-5 h-5 text-sky-400"></i> FPGA/SoC</div>
+                    <div class="flex items-center gap-2" title="Embedded C"><i data-lucide="code-2" class="w-5 h-5 text-sky-400"></i> C/C++</div>
+                    <div class="flex items-center gap-2" title="Python"><i data-lucide="terminal" class="w-5 h-5 text-sky-400"></i> Python</div>
+                    <div class="flex items-center gap-2" title="MATLAB"><i data-lucide="grid" class="w-5 h-5 text-sky-400"></i> MATLAB</div>
+                    <div class="flex items-center gap-2" title="IoT"><i data-lucide="wifi" class="w-5 h-5 text-sky-400"></i> ESP32 IoT</div>
+                    <div class="flex items-center gap-2" title="Git"><i data-lucide="git-branch" class="w-5 h-5 text-sky-400"></i> Git</div>
                 </div>
             </div>
         </div>
@@ -145,29 +143,241 @@
             <div class="relative fade-in-up">
                 <div class="absolute -inset-4 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-2xl opacity-20 blur-lg"></div>
                 <div class="relative bg-slate-800 rounded-2xl p-8 border border-slate-700 h-full min-h-[400px] flex items-center justify-center overflow-hidden">
-                   <!-- Abstract Code Visual -->
-                   <div class="font-mono text-sm text-sky-300 opacity-70">
+                   <!-- Verilog/C Code Visual -->
+                   <div class="font-mono text-sm text-sky-300 opacity-80 leading-relaxed">
 <pre>
-class Developer {
-  constructor() {
-    this.name = "Alex Doe";
-    this.role = "Full Stack";
-    this.coffee = true;
-  }
+// Module: System Control
+module FPGA_SoC (
+    input  wire clk,
+    input  wire rst_n,
+    output reg  led_status
+);
 
-  create() {
-    return "Awesome Stuff";
-  }
-}
+  always @(posedge clk) begin
+    if (!rst_n)
+       led_status <= 1'b0;
+    else
+       // Processing Sensor Data
+       led_status <= ~led_status;
+  end
+endmodule
 </pre>
                    </div>
-                   <i data-lucide="terminal" class="absolute bottom-4 right-4 w-24 h-24 text-slate-700 opacity-50"></i>
+                   <i data-lucide="cpu" class="absolute bottom-4 right-4 w-24 h-24 text-slate-700 opacity-50"></i>
                 </div>
             </div>
             <div class="fade-in-up">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
                 <p class="text-slate-400 text-lg mb-6 leading-relaxed">
-                    I started my journey as a graphic designer, but quickly fell in love with the logic and limitless possibilities of coding. Today, I bridge the gap between design and engineering.
+                    I am an Electrical and Computer Engineering professional with a strong foundation in digital systems, embedded design, and power systems. My passion lies in bridging the gap between theoretical concepts and real-world hardware applications.
                 </p>
                 <p class="text-slate-400 text-lg mb-8 leading-relaxed">
-                    When I'm not
+                    With experience as a Lecturer, I have developed curriculum and guided students through complex circuit designs. I am committed to inclusive pedagogy and leveraging technology like FPGAs and IoT to solve meaningful problems.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-slate-800 rounded-lg border border-slate-700">
+                        <h3 class="font-bold text-white mb-1">Education</h3>
+                        <p class="text-sm text-slate-400">M.S. Comp Sci (Georgia Tech)</p>
+                        <p class="text-sm text-slate-400">B.Sc. EEE (BUET)</p>
+                    </div>
+                    <div class="p-4 bg-slate-800 rounded-lg border border-slate-700">
+                        <h3 class="font-bold text-white mb-1">Certifications</h3>
+                        <p class="text-sm text-slate-400">Deep Learning (UIUC)</p>
+                        <p class="text-sm text-slate-400">Intel FPGA Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-24 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center fade-in-up">Professional Journey</h2>
+            <div class="relative border-l border-slate-700 ml-4 space-y-12 fade-in-up">
+                
+                <!-- Item 1 -->
+                <div class="mb-10 ml-8 relative">
+                    <span class="absolute -left-11 flex items-center justify-center w-6 h-6 bg-sky-500 rounded-full ring-8 ring-slate-900">
+                        <i data-lucide="briefcase" class="w-3 h-3 text-white"></i>
+                    </span>
+                    <h3 class="flex items-center mb-1 text-lg font-semibold text-white">Lecturer - EEE Dept. <span class="bg-blue-900 text-blue-300 text-sm font-medium px-2.5 py-0.5 rounded ml-3">Premier University</span></h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Nov 2024 – Dec 2024 | Chattogram, Bangladesh</time>
+                    <p class="mb-4 text-base font-normal text-gray-400">
+                        Taught Digital Electronics to 150+ undergraduates. Designed course syllabi and lab safety protocols. Mentored students in logic circuit design, flip-flops, and counters.
+                    </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="mb-10 ml-8 relative">
+                    <span class="absolute -left-11 flex items-center justify-center w-6 h-6 bg-indigo-500 rounded-full ring-8 ring-slate-900">
+                        <i data-lucide="graduation-cap" class="w-3 h-3 text-white"></i>
+                    </span>
+                    <h3 class="flex items-center mb-1 text-lg font-semibold text-white">M.S. in Computer Science <span class="bg-indigo-900 text-indigo-300 text-sm font-medium px-2.5 py-0.5 rounded ml-3">Georgia Tech</span></h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Starting Jan 2026</time>
+                    <p class="text-base font-normal text-gray-400">Specialization in Machine Learning.</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="ml-8 relative">
+                    <span class="absolute -left-11 flex items-center justify-center w-6 h-6 bg-slate-600 rounded-full ring-8 ring-slate-900">
+                        <i data-lucide="graduation-cap" class="w-3 h-3 text-white"></i>
+                    </span>
+                    <h3 class="flex items-center mb-1 text-lg font-semibold text-white">B.Sc. in Electrical & Electronic Engineering <span class="bg-slate-700 text-slate-300 text-sm font-medium px-2.5 py-0.5 rounded ml-3">BUET</span></h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400">GPA: 3.66/4.00</time>
+                    <p class="text-base font-normal text-gray-400">Focus on Communication & Signal Processing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-4 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center fade-in-up">Key Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8 fade-in-up">
+                
+                <!-- Project 1 -->
+                <div class="group bg-slate-800 rounded-xl border border-slate-700 overflow-hidden hover:border-sky-500 transition-colors">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="p-2 bg-sky-500/10 rounded-lg text-sky-400"><i data-lucide="cpu" class="w-6 h-6"></i></div>
+                            <span class="text-xs font-mono text-slate-500">2023 - Present</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-sky-400 transition-colors">FPGA-Based SoC on DE10-Lite</h3>
+                        <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                            Designed a System-on-Chip integrating CPU, SDRAM, ADC, and SPI accelerometer. Verified five interrupt sources and achieved timing closure at 364 MHz with ~23% logic utilization.
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="px-2 py-1 bg-slate-900 rounded text-xs text-slate-300 font-mono">Verilog</span>
+                            <span class="px-2 py-1 bg-slate-900 rounded text-xs text-slate-300 font-mono">Intel Quartus</span>
+                            <span class="px-2 py-1 bg-slate-900 rounded text-xs text-slate-300 font-mono">Nios II</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group bg-slate-800 rounded-xl border border-slate-700 overflow-hidden hover:border-sky-500 transition-colors">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="p-2 bg-green-500/10 rounded-lg text-green-400"><i data-lucide="activity" class="w-6 h-6"></i></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-sky-400 transition-colors">Smart Health & Env. Monitoring</h3>
+                        <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                            Developed an embedded IoT system using ESP32. Programmed sensor telemetry for heart rate, temperature, and AQI monitoring using C/C++ for real-time health tracking.
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="px-2 py-1 bg-slate-900 rounded text-xs text-slate-300 font-mono">ESP32</span>
+                            <span class="px-2 py-1 bg-slate-900 rounded text-xs text-slate-300 font-mono">C++</span>
+                            <span class="px-2 py-1 bg-slate-900 rounded text-xs text-slate-300 font-mono">IoT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group bg-slate-800 rounded-xl border border-slate-700 overflow-hidden hover:border-sky-500 transition-colors">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="p-2 bg-blue-500/10 rounded-lg text-blue-400"><i data-lucide="droplets" class="w-6 h-6"></i></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-sky-400 transition-colors">Smart Water Quality Monitoring</h3>
+                        <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                            Built a mixed-signal acquisition system on FPGA using MQ-7 and LM35 sensors. Implemented Finite State Machine (FSM) based control logic for real-time alerting.
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="px-2 py-1 bg-slate-900 rounded text-xs text-slate-300 font-mono">FPGA</span>
+                            <span class="px-2 py-1 bg-slate-900 rounded text-xs text-slate-300 font-mono">Sensors</span>
+                            <span class="px-2 py-1 bg-slate-900 rounded text-xs text-slate-300 font-mono">FSM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group bg-slate-800 rounded-xl border border-slate-700 overflow-hidden hover:border-sky-500 transition-colors">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="p-2 bg-yellow-500/10 rounded-lg text-yellow-400"><i data-lucide="zap" class="w-6 h-6"></i></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-sky-400 transition-colors">IEEE-39 Bus Power System Study</h3>
+                        <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                            Simulated HVDC integration and stabilization. Utilized SVC and shunt capacitors to analyze power flow and stability via CYMEPSAF simulation tools.
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="px-2 py-1 bg-slate-900 rounded text-xs text-slate-300 font-mono">CYMEPSAF</span>
+                            <span class="px-2 py-1 bg-slate-900 rounded text-xs text-slate-300 font-mono">Power Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-4">
+        <div class="max-w-3xl mx-auto text-center fade-in-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Let's Connect</h2>
+            <p class="text-slate-400 mb-12 text-lg">
+                I'm currently looking for new opportunities in Electrical & Computer Engineering. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            </p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="mailto:kazmirfahrier1989@gmail.com" class="p-6 bg-slate-800 rounded-2xl border border-slate-700 hover:border-sky-500 transition-all group min-w-[200px]">
+                    <i data-lucide="mail" class="w-8 h-8 text-sky-400 mx-auto mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-semibold mb-1">Email Me</h3>
+                    <p class="text-sm text-slate-400">kazmirfahrier1989@gmail.com</p>
+                </a>
+                <a href="https://linkedin.com/in/kazmir-fahrier" target="_blank" class="p-6 bg-slate-800 rounded-2xl border border-slate-700 hover:border-sky-500 transition-all group min-w-[200px]">
+                    <i data-lucide="linkedin" class="w-8 h-8 text-sky-400 mx-auto mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-semibold mb-1">LinkedIn</h3>
+                    <p class="text-sm text-slate-400">Connect professionally</p>
+                </a>
+                <a href="https://github.com/KazmirFahrier" target="_blank" class="p-6 bg-slate-800 rounded-2xl border border-slate-700 hover:border-sky-500 transition-all group min-w-[200px]">
+                    <i data-lucide="github" class="w-8 h-8 text-sky-400 mx-auto mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-semibold mb-1">GitHub</h3>
+                    <p class="text-sm text-slate-400">View my code</p>
+                </a>
+            </div>
+            <p class="mt-12 text-slate-600 text-sm">
+                &copy; 2024 Kazmir Fahrier. Built with HTML & Tailwind CSS.
+            </p>
+        </div>
+    </section>
+
+    <!-- Script for Interactions -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar-default');
+        
+        menuBtn.addEventListener('click', () => {
+            navbar.classList.toggle('hidden');
+        });
+
+        // Smooth Scroll & Active Link Highlighting
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                navbar.classList.add('hidden'); // Close mobile menu on click
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in-up').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
