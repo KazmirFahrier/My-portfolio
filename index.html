@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Slate 900 */
+            color: #f8fafc; /* Slate 50 */
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        /* Animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(180deg, rgba(56, 189, 248, 0.15) 0%, rgba(129, 140, 248, 0.15) 100%);
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -1;
+            animation: move 20s infinite alternate;
+        }
+
+        @keyframes move {
+            from { transform: translate(-10%, -10%) rotate(0deg); }
+            to { transform: translate(10%, 10%) rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="relative overflow-x-hidden">
+
+    <!-- Background Decoration -->
+    <div class="blob top-0 left-0"></div>
+    <div class="blob bottom-0 right-0" style="animation-duration: 25s; background: linear-gradient(180deg, rgba(236, 72, 153, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 start-0 border-b border-slate-800 bg-slate-900/80 backdrop-blur-md">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <div class="w-8 h-8 bg-gradient-to-tr from-sky-400 to-indigo-500 rounded-lg flex items-center justify-center font-bold text-white">
+                    P
+                </div>
+                <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Portfolio</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false" id="menu-toggle">
+                <span class="sr-only">Open main menu</span>
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-slate-800 rounded-lg bg-slate-800/50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
+                    <li>
+                        <a href="#home" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-sky-400 md:p-0" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 transition-colors">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 transition-colors">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 transition-colors">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-4">
+        <div class="max-w-4xl mx-auto text-center z-10 fade-in-up">
+            <div class="inline-block p-2 px-4 rounded-full bg-slate-800/50 border border-slate-700 mb-6 text-sm text-sky-300 font-medium">
+                👋 Hello, I'm Available for Work
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+                Building digital <br />
+                <span class="gradient-text">experiences that matter.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                I'm a creative developer passionate about building accessible, pixel-perfect user interfaces that blend art and code.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" class="px-8 py-3.5 rounded-lg bg-white text-slate-900 font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center gap-2">
+                    View My Work <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#contact" class="px-8 py-3.5 rounded-lg bg-slate-800 border border-slate-700 text-white font-semibold hover:bg-slate-700 transition-colors flex items-center justify-center gap-2">
+                    Contact Me
+                </a>
+            </div>
+            
+            <!-- Tech Stack Marquee (Static representation for simplicity) -->
+            <div class="mt-16 pt-8 border-t border-slate-800/50">
+                <p class="text-sm text-slate-500 mb-4 uppercase tracking-wider font-semibold">Tech Stack</p>
+                <div class="flex flex-wrap justify-center gap-6 text-slate-400">
+                    <div class="flex items-center gap-2"><i data-lucide="code-2" class="w-5 h-5"></i> React</div>
+                    <div class="flex items-center gap-2"><i data-lucide="layout" class="w-5 h-5"></i> Tailwind</div>
+                    <div class="flex items-center gap-2"><i data-lucide="file-json" class="w-5 h-5"></i> Node.js</div>
+                    <div class="flex items-center gap-2"><i data-lucide="database" class="w-5 h-5"></i> SQL</div>
+                    <div class="flex items-center gap-2"><i data-lucide="figma" class="w-5 h-5"></i> Figma</div>
+                    <div class="flex items-center gap-2"><i data-lucide="git-branch" class="w-5 h-5"></i> Git</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-4 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative fade-in-up">
+                <div class="absolute -inset-4 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-2xl opacity-20 blur-lg"></div>
+                <div class="relative bg-slate-800 rounded-2xl p-8 border border-slate-700 h-full min-h-[400px] flex items-center justify-center overflow-hidden">
+                   <!-- Abstract Code Visual -->
+                   <div class="font-mono text-sm text-sky-300 opacity-70">
+<pre>
+class Developer {
+  constructor() {
+    this.name = "Alex Doe";
+    this.role = "Full Stack";
+    this.coffee = true;
+  }
+
+  create() {
+    return "Awesome Stuff";
+  }
+}
+</pre>
+                   </div>
+                   <i data-lucide="terminal" class="absolute bottom-4 right-4 w-24 h-24 text-slate-700 opacity-50"></i>
+                </div>
+            </div>
+            <div class="fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+                <p class="text-slate-400 text-lg mb-6 leading-relaxed">
+                    I started my journey as a graphic designer, but quickly fell in love with the logic and limitless possibilities of coding. Today, I bridge the gap between design and engineering.
+                </p>
+                <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                    When I'm not
